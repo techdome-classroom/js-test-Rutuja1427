@@ -6,10 +6,10 @@ function getTotalIsles(grid) {
   const visited = Array.from({ length: rows }, () => Array(cols).fill(false));
 
   function dfs(r, c) {
-    // Check boundaries and whether the cell is valid for DFS
+    
     if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W' || visited[r][c]) return;
 
-    // Mark the cell as visited
+    
     visited[r][c] = true;
 
     // Explore all four possible directions
